@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "148035665678",
+    "firebase_url": "https://postfix-ce6e0-default-rtdb.firebaseio.com",
+    "project_id": "postfix-ce6e0",
+    "storage_bucket": "postfix-ce6e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148035665678:android:1fb411753f8442931c615f",
+        "android_client_info": {
+          "package_name": "com.example.splashh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148035665678-7bpvitectk90iralmelbr188lulpbbcf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeuLm24n-qyqN5R5FXadB7VmkAk2jiSmA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148035665678-7bpvitectk90iralmelbr188lulpbbcf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "148035665678-8at1bo20a7e1q1othj7v3nqr1i2732ai.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.splashh"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

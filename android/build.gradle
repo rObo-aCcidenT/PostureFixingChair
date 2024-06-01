@@ -1,0 +1,35 @@
+buildscript {
+    ext.kotlin_version = '1.9.24' // Update to the desired Kotlin version
+
+    repositories {
+        google() // Add Google Maven repository
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.0' // Replace with the desired version
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version" // Add Kotlin Gradle plugin dependency
+        classpath 'com.google.gms:google-services:4.4.1' // Add Google Services plugin dependency
+    }
+}
+
+allprojects {
+    repositories {
+        google() // Add Google Maven repository
+        jcenter()
+    }
+
+    rootProject.buildDir = '../build'
+
+    subprojects {
+        project.buildDir = "${rootProject.buildDir}/${project.name}"
+    }
+
+    subprojects {
+        project.evaluationDependsOn(':app')
+    }
+// changed the clean into custom clean 
+    tasks.register("customClean", Delete) {
+        delete rootProject.buildDir
+    }
+}
